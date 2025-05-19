@@ -1,6 +1,6 @@
 🌍 AI-Powered Natural Disaster Prediction System
 📌 Features
-Multi-Disaster Prediction:
+1.Multi-Disaster Prediction:
 
 Supports six disaster types:
 
@@ -16,15 +16,15 @@ Storm
 
 Volcano
 
-AI Models for Each Disaster:
+2.AI Models for Each Disaster:
 
 A separate machine learning model is trained for each disaster using sample data.
 
-Real-Time Simulation:
+3.Real-Time Simulation:
 
 Uses simulated sensor data (e.g., rainfall, seismic activity, wind speed) to make predictions.
 
-Prediction Output:
+4.Prediction Output:
 
 Classifies each scenario as:
 
@@ -32,18 +32,18 @@ Classifies each scenario as:
 
 ⚠ RISK — if the conditions resemble historical disaster patterns
 
-Visualization:
+5.Visualization:
 
 Bar Chart shows risk status for each disaster.
 
 Line Chart tracks one of the input sensor values for comparison across disasters.
 
-Modular Structure:
+6.Modular Structure:
 
 Clearly separated functions for training, simulating, predicting, and visualizing.
 
 ⚙️ How It Works
-Model Training (train_models()):
+1.Model Training (train_models()):
 
 Trains a classifier for each disaster using small hardcoded datasets.
 
@@ -53,19 +53,19 @@ Models used include:
 
 RandomForest, DecisionTree, LogisticRegression, Naive Bayes, SVM, GradientBoosting
 
-Data Simulation (simulate_inputs()):
+2.Data Simulation (simulate_inputs()):
 
 Simulates sensor input data using random values within realistic ranges.
 
 Example: Earthquake data includes seismic activity, ground displacement, and depth.
 
-Prediction (predict_all()):
+3.Prediction (predict_all()):
 
 Uses trained models to predict the risk status (0 = safe, 1 = risk).
 
 Returns formatted results including status and input values.
 
-Visualization (plot_results()):
+4.Visualization (plot_results()):
 
 Displays:
 
@@ -73,7 +73,7 @@ A bar chart with disaster risk results.
 
 A line graph of the first sensor input across all disaster types.
 
-Main Execution:
+5.Main Execution:
 
 Trains models → Simulates data → Predicts → Prints results → Plots graphs.
 
