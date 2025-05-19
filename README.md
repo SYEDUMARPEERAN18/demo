@@ -1,5 +1,7 @@
 🌍 AI-Powered Natural Disaster Prediction System
+
 📌 Features
+
 1.Multi-Disaster Prediction:
 
 Supports six disaster types:
